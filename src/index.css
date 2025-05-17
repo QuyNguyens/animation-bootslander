@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+.slick-dots li.slick-active div {
+  @apply bg-blue-600 w-3 h-3;
+}
+.bg-accent-faint {
+  background-color: color-mix(in srgb, #1acc8d, transparent 96%);
+}
+
+.bg-accent-green {
+  background-color: color-mix(in srgb, #1acc8d, transparent 92%);
+}
+
+.active-tab {
+  @apply text-white;
+}
+
+.active-tab::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  height: 2px;
+  width: 50%;
+  background-color: #1acc8d;
+  transition: all 0.7s;
+}

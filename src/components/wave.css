@@ -1,0 +1,43 @@
+.hero-waves use {
+  animation-timing-function: cubic-bezier( 0.55, 0.5, 0.45, 0.5);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 6s;
+  transform-origin: center bottom;
+}
+
+.hero-waves .wave1 use {
+  animation-name: wave1;
+  animation-duration: 6s;
+  animation-delay: 0s;
+  fill: rgba(34, 197, 94, 0.6);
+}
+
+.hero-waves .wave2 use {
+  animation-name: wave2;
+  animation-duration: 5s;
+  animation-delay: -1s;
+  fill: rgba(34, 197, 94, 0.4);
+}
+
+.hero-waves .wave3 use {
+  animation-name: wave3;
+  animation-duration: 7s;
+  animation-delay: -0.5s;
+  fill: rgba(34, 197, 94, 0.3);
+}
+
+@keyframes wave1 {
+  0% { transform: translateX(0) translateY(0) }
+  100% { transform: translateX(-20px) translateY(5px) }
+}
+
+@keyframes wave2 {
+  0% { transform: translateX(0) translateY(0) }
+  100% { transform: translateX(-15px) translateY(3px) }
+}
+
+@keyframes wave3 {
+  0% { transform: translateX(0) translateY(0) }
+  100% { transform: translateX(-25px) translateY(8px) }
+}
